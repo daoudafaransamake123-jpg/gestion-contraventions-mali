@@ -1,0 +1,120 @@
+# 🚔 Gestion des Contraventions Routières – Mali
+
+## 📖 Présentation du Projet
+
+Ce projet consiste en la conception et le développement d’une application web et mobile dédiée à la gestion numérique des contraventions routières au Mali.
+
+L’objectif principal est de moderniser le processus d’enregistrement, de suivi et de consultation des infractions routières en mettant en place un système centralisé, sécurisé et traçable.
+
+La solution repose sur une architecture API REST permettant la communication entre :
+
+- Une application mobile destinée aux agents de contrôle routier
+- Une application web destinée aux administrateurs
+- Une base de données centralisée
+
+---
+
+## 🎯 Objectifs du Projet
+
+- Digitaliser l’enregistrement des contraventions
+- Centraliser les données dans une base sécurisée
+- Permettre la consultation des infractions
+- Assurer la traçabilité des actions
+- Améliorer la transparence et l’efficacité administrative
+
+---
+
+## 🏗 Architecture du Système
+
+L’application repose sur une architecture client–serveur structurée comme suit :
+
+Application Mobile → API REST (Django) → Base de Données MySQL ← Application Web
+
+- Le mobile et le web communiquent uniquement via l’API REST
+- La base de données n’est jamais accessible directement
+- Toutes les opérations sont journalisées pour garantir la traçabilité
+
+---
+
+## 🛠 Technologies Utilisées
+
+### Backend
+- Django (Python)
+- Django REST Framework
+
+### Base de données
+- MySQL
+
+### Frontend Web
+- HTML
+- CSS
+- JavaScript
+
+### Application Mobile
+- Flutter (Dart)
+
+### Outils de développement
+- Git & GitHub
+- GitHub Desktop
+- Visual Studio Code
+
+---
+
+## 📁 Structure du Projet
+gestion-contraventions-mali/
+│
+├── backend/ # API Django
+├── frontend-web/ # Interface web administrateur
+├── mobile-app/ # Application mobile Flutter
+├── database/ # Modélisation et scripts SQL
+├── docs/ # Documentation et diagrammes
+├── tests/ # Tests fonctionnels et techniques
+└── README.md
+
+---
+
+## 🔐 Fonctionnalités Principales
+
+- Authentification sécurisée des agents et administrateurs
+- Enregistrement numérique des contraventions
+- Consultation des contraventions par statut
+- Gestion du paiement des amendes
+- Tableau de bord administratif
+- Traçabilité complète des opérations
+
+---
+
+## 🚀 Installation (à compléter)
+
+### Backend
+
+1. Cloner le projet
+2. Installer les dépendances :
+   pip install -r requirements.txt
+3. Configurer la base MySQL
+4. Lancer le serveur :
+   python manage.py runserver
+
+### Application Mobile
+
+1. Se placer dans le dossier mobile-app
+2. Installer les dépendances :
+   flutter pub get
+3. Lancer l’application :
+   flutter run
+
+---
+
+## 👥 Organisation de l’Équipe
+
+- Responsable Backend
+- Développeur Frontend Web
+- Développeur Mobile
+- Gestionnaire Base de Données
+- Responsable Documentation & Tests
+
+---
+
+## 📚 Cadre Académique
+
+Ce projet est réalisé dans un cadre académique afin de mettre en pratique les concepts de génie logiciel, d’architecture des systèmes d’information et de développement d’applications web et mobiles.
